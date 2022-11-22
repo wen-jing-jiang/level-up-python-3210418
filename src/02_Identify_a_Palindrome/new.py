@@ -1,6 +1,6 @@
-string = "whales? -i"
+str = "whales? -i"
 
-def word(string):
+def wording(string):
     string = string.lower()
     slist = list(string)
     i = 0
@@ -14,8 +14,8 @@ def word(string):
         return slist
     x = "".join(slist)
     print(x)
-    string = "".join(reversed(slist))
-    print(string)
-    return string
+    backwards = "".join(reversed(slist))
+    print(backwards)
+    return backwards
 
 
