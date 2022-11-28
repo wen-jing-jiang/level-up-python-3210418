@@ -23,10 +23,15 @@ def is_palin(string):
     print(word)
     backward = "".join(reversed(slist))
     print(backward)
-    return backward == word
+    palin = ""
+    if backward == word:
+        palin = "yes"
+    else:
+        palin = "no"
+    return palin
 
 
-def is(word):
+def just(word):
     word = word.lower()
     slist = list(word)
     i = 0
